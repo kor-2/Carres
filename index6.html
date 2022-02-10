@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <style>
+        body {
+            box-sizing: border-box;
+            background-color: #EEE;
+        }
+
+        #container {
+            width: 600px;
+            height: 600px;
+            border: 1px solid #CCC;
+            margin: 0 auto;
+            background-color: #FFF;
+            /*--ajout--*/
+            display: flex;
+            align-items: flex-end;
+        }
+
+        #rouge,
+        #vert,
+        #bleu {
+            text-align: center;
+        }
+
+        #rouge {
+            width: 200px;
+            height: 200px;
+            background-color: #F00;
+            /*--ajout--*/
+            transform: rotate(-90deg);
+        }
+
+        #vert {
+            width: 100px;
+            height: 100px;
+            background-color: #0F0;
+            /*--ajout--*/
+            transform: rotate(-90deg) translate(30%,35%);
+            margin: 0 auto 60px 0;
+
+        }
+
+        #bleu {
+            width: 50px;
+            height: 50px;
+            background-color: #00F;
+        }
+        /*--ajout--*/
+        #blouge{
+            display: flex;
+            align-items: flex-end;
+            transform: rotate(45deg);
+            margin: 0 0 60px auto;
+        }
+    </style>
+</head>
+<!-- changement de l'ordre des éléments + ajout de div -->
+<body>
+    <div id="container">
+        <div id="blouge">
+            <div id="bleu">BLEU</div>
+            <div id="rouge">ROUGE</div>
+        </div>
+        
+        <div id="vert">VERT</div>
+    </div>
+</body>
+
+</html>
